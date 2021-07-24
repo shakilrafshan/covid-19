@@ -1,0 +1,201 @@
+/* google font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500;1,900&display=swap');
+
+/* common utilities */
+*{
+    scroll-behavior: smooth;
+}
+header{
+    position: sticky;
+    background-color: #fff8f2; 
+}
+.nav-link, button{
+    color: #035755;
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-size: 32px;
+    font-weight:700;
+    color: #035755;
+    margin-bottom:25px ;
+}
+h5{
+    font-size: 24px;
+    color: #FA5652;
+    font-weight: 700;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* alert section  */
+.alert-section,.about-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    
+}
+.alert-section{
+    background-color: #fff8f2;
+}
+.about-section{
+    background-image: url(./images/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content{
+    margin-left: 50px;
+}
+.about{
+    margin-right: 20px;
+}
+
+.img{
+    width: 100%;
+}
+.top-btn a{
+    background: #FB4C47;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+    padding: 25px 65px;
+    font-size: 24px;
+    font-weight: 700;
+    color:white;
+    display: inline-block;
+    border:1px solid #FB4C47;
+}
+.top-btn a:hover{
+    border:1px solid #FB4C47;
+    color:#FB4C47;
+    background-color: whitesmoke;
+    transition: 1.2s;
+}
+    
+.about-btn a{
+    border:1px solid #FB4C47;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+    padding: 25px 65px;
+    font-size: 24px;
+    font-weight: 700;
+    color:#FB4C47;
+    display: inline-block;
+}
+.about-btn a:hover{
+    border:1px solid #FB4C47;
+    background-color:#FB4C47;
+    color: whitesmoke;
+    transition: 1.2s;
+}
+.contagion-section{
+    background-image: url(./images/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contagions{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 20px 50px;
+    grid-column-gap: 20px;
+    
+    
+}
+.contagion{
+    background: #FFFFFF;
+box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+.contagion img{
+    align-self: center;
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+}
+.symptomps-section{
+    margin: 0 350px;
+}
+.prvention{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 50px;
+   
+}
+
+.left{
+    padding:0 20px;
+    align-self: center;
+}
+.p-t{
+    display: flex;
+    align-items: center; 
+}
+
+.prevention-img{
+   width: 100%;
+}
+.number{
+    
+    background-color:red;
+   padding: 20px;
+   border-radius: 50px;
+   margin-right: 20px;
+   
+}
+@media only screen and (max-width:688px) {
+    h1{
+        font-size: 25px;
+        font-weight:700;
+    }
+    h5{
+        font-size: 24px;
+    }
+    .alert-section,.about-section{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+    }
+    .content,.about{
+        order: 1;
+        margin-top: 10px;
+        margin-left: 20px;
+        
+        
+    }
+}
+@media only screen and (min-width:688px) and (max-width:1024px) {
+    h1{
+        font-size: 25px;
+        
+    }
+    h5{
+        font-size: 24px;
+    }
+    .alert-section,.about-section{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+    }
+    .content{
+    margin-top: 10px;
+        
+    }
+   
+}
