@@ -7,11 +7,25 @@
 }
 header{
     position: sticky;
+    top: 0;
     background-color: #fff8f2; 
 }
-.nav-link, button{
+
+.nav-item a{
+    color: #035755;  
+}
+.nav-item a:hover{
+    color: black;  
+}
+.nav-item a:active{
+    color: black;  
+}
+ .navbar-toggler {
     color: #035755;
-    font-weight: bold;
+    border-color: #035755;
+}
+.navbar-toggler-icon {
+    background-image: url(./images/icons8-menu-30.png);
 }
 
 body{
@@ -166,6 +180,29 @@ p{
 
    
 }
+.newsletter-section{
+    background-color: #FFF8F2;
+    padding: 80px 0;
+}
+.input {
+    border: none;
+    background-color:white;
+
+    box-shadow: 1px 1px 20px inset;
+    padding: 20px 30px;
+    border-radius: 50px 0 0 50px;
+}
+.input:focus{
+    color:#FA5652 ;outline: none;
+}
+.input2 {
+    border: none;
+    background-color:#FA5652;
+    color: whitesmoke;
+    padding: 20px 30px;
+    font-weight: bold;
+    border-radius: 0 50px  50px 0 ;
+}
     @media only screen and (max-width:688px) {
     h1{
         font-size: 25px;
@@ -206,6 +243,15 @@ p{
     padding: 10px 25px;
     font-size: 20px;
    
+}
+.input {
+    
+    padding: 10px 15px;
+    border-radius: 50px 0 0 50px;
+    
+}
+.input2{
+    padding:10px 10px ;
 }
 }
 
